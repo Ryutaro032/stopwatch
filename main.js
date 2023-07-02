@@ -44,14 +44,13 @@ stop.addEventListener('click',function(){
     reset.disabled = false;
 });
 reset.addEventListener('click',function(){
+    hour        = 0;
+    minutes     = 0;
+    seconds     = 0;
+    millisecond = 0;
+    
     timer.innerHTML = '0:0:0:0';
-    
-    let hour        = 0;
-    let minutes     = 0;
-    let seconds     = 0;
-    let millisecond = 0;
-    
     start.disabled = false;
     stop.disabled  = true;
     reset.disabled = true; 
-})
+});
